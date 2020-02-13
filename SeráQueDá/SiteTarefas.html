@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Ano C</title>
+    <style>
+        body{
+            background-color: rgb(217, 240, 256);
+
+        }
+        p#tarefasmsg{
+            color:  black;
+            margin-top: 20px;
+            font:  normal 30px Arial;
+            text-align: center;
+        }
+        input#btn{
+            background-color: rgba(0, 0, 0, 0);
+            border: rgba(255, 255, 255, 0);
+            color: black;
+            font: normal 20px Arial;
+        }
+        img{
+            margin-top: -100px;
+            width: 100%;
+        }
+        p#txtprincipal{
+            font: normal 50px Arial;
+            text-align: center;
+            margin-top: auto;
+        }
+        img#img{
+            width: auto;
+            margin-top: -160px;
+            height: 100px;
+            position: absolute;
+            left: 1050px;
+        }
+    </style>
+</head>
+<body>
+   
+    <p id = "tarefasmsg"><strong>Tarefas 1º C</strong></p>
+    
+    <img src="linha_preta.png" alt="" width="200" height="50">
+
+    <p id = "txtprincipal">Este site é destinado <br> aos alunos do 1º C </br></p>
+
+    <img src="linha_preta.png" alt="" width="200" height="50">
+
+    <img id = "img" src="estudo.png" alt="">
+    
+    <input id = "btn" type="button" value="Matemática" width="10" height="10" onclick = "math()" > <div class="linha-vertical"></div>
+    
+    <script>
+        var apertou = true
+        var btnmath = document.getElementById("btn")
+        var txtprincipal = document.getElementById("txtprincipal")
+        function math(){
+            if(apertou == true){
+                location.href = "Matematica.html"
+            }
+        }
+
+    </script>
+</body>
+</html>
