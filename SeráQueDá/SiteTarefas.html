@@ -32,10 +32,19 @@
         }
         img#img{
             width: auto;
-            margin-top: -160px;
+            margin-top: -150px;
             height: 100px;
             position: absolute;
             left: 1050px;
+        }
+        div#math{
+            text-align: center;
+
+
+        }
+        img#pi{
+            width: 15px;
+
         }
     </style>
 </head>
@@ -51,7 +60,11 @@
 
     <img id = "img" src="estudo.png" alt="">
     
-    <input id = "btn" type="button" value="Matemática" width="10" height="10" onclick = "math()" > <div class="linha-vertical"></div>
+    <div id = "math">
+        <img id = "pi"src="pimath.png" alt="">
+        <input id = "btn" type="button" value="Matemática" width="10" height="10" onclick = "math()">
+
+    </div>
     
     <script>
         var apertou = true
